@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!----Font Awesome--->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!----Style Css--->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title></title>
+	<!----Font Famiy Link--->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,700;0,900;1,100;1,300;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,500;0,700;0,800;0,900;1,100;1,400;1,500&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<section>
+		<div class="img"></div>
+		<div class="border"></div>
+		<div class="container">
+			<header>
+				<div class="logo"><img src="logo.svg"></div>
+				<ul>
+					<li class="active" style="background:none;">Home</li>
+					<li>Other Pages</li>
+					<li>About</li>
+					<li>Services</li>
+					<li>Projects</li>
+					<li>Blog</li>
+					<li>Contact</li>
+				</ul>
+
+				<div class="search-here">
+					<input type="text">
+					<i class="fa fa-phone" aria-hidden="true"></i>
+					<span>
+						<p>  call we are working</p>
+						<h3>+00 123 456 7890</h3>
+					</span>
+				</div>
+			</header>
+
+			<div class="innovation-boxes">
+				<div>
+					<h1>innovative designs you can<br>
+						<b>dream it</b> we can <b>build it!</b>
+					</h1>
+
+					<div class="three-box">
+						<div>
+							 <div class="counter" data-countto="150" data-duration="8000">0</div>
+							<p>Happy Clients</p>
+						</div>
+						<div>
+							<div class="counter" data-countto="85" data-duration="20000">0</div>
+							<p>Projects Completed</p>
+						</div>
+						<div>
+							<div class="counter" data-countto="150" data-duration="8000">0</div>
+							<p>Years Of Experience</p>
+						</div>
+					</div>
+
+					<button>		
+						<p>Schedule Appointment </p>
+					</button>
+				</div>
+				<div>
+					<div class="video-tultip">
+						<div class="text-video">
+							Know More<br>
+							<b>Watch Video</b>
+						</div>
+						<span class="hero-video-play">
+							<i class="fa fa-play" aria-hidden="true"></i>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="about">
+		<div class="container">
+			<span class="get">GET TO KNOW US</span>
+			<h1>ABOUT COMPANY</h1>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus amet quaerat doloribus voluptate, corporis vitae aliquid dignissimos sint ipsa quae ullam totam vel consequuntur a quibusdam officiis? Molestias, earum ex!</p>
+			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat libero explicabo ad praesentium commodi rerum suscipit neque magnam, maxime distinctio minima magni error reiciendis sed, dignissimos molestiae deserunt officiis aperiam perspiciatis saepe. Omnis magni ipsum dolore, porro mollitia tempora dolores, similique quidem aliquam sunt suscipit culpa doloribus molestiae laborum iusto?</p>
+
+			<button>
+			Know More
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+
+		</button> 
+			</div>
+		 </div>
+
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+			<script type="text/javascript">
+				$(".counter").each(function () {
+  var $this = $(this),
+    countTo = $this.attr("data-countto");
+  countDuration = parseInt($this.attr("data-duration"));
+  $({ counter: $this.text() }).animate(
+    {
+      counter: countTo
+    },
+    {
+      duration: countDuration,
+      easing: "linear",
+      step: function () {
+        $this.text(Math.floor(this.counter));
+      },
+      complete: function () {
+        $this.text(this.counter);
+      }
+    }
+  );
+});
+			</script>
+
+</body>
+</html>
